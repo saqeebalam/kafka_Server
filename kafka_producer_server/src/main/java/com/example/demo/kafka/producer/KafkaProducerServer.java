@@ -22,8 +22,10 @@ public class KafkaProducerServer {
 			this.kafkaTemplete = kafkaTemplete;
 		}
 	
-			
-		
+			 
+		/*
+		 * This is for sending key and value
+		 */
 		public void sendMessage(String key,String message)	
 		{
 			//LOGGER.info(String.format("Message sent %s", message));

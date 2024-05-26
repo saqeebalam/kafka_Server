@@ -20,12 +20,10 @@ public class DemoApplication {
         logger.info("Application started successfully.");
     }
 
-    @Bean
-    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-        return args -> {
-            StringDataSender stringDataSender = ctx.getBean(StringDataSender.class);
-            logger.info("Calling sendData method");
-            stringDataSender.sendData();
-        };
-    }
+	/*
+	 * @Bean public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+	 * return args -> { StringDataSender stringDataSender =
+	 * ctx.getBean(StringDataSender.class); logger.info("Calling sendData method");
+	 * stringDataSender.sendData(); }; }
+	 */
 }
